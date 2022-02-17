@@ -131,6 +131,16 @@ body {
     left: 20px;
 }
 
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
 /* navigation bar and header */
 
 /* home page */
@@ -432,9 +442,9 @@ body {
     color: #ef3636;
 }
 
-#newsletters{
+#newsletters {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     background-image: url("img/banner/b14.png");
@@ -442,25 +452,29 @@ body {
     background-position: 20% 30%;
     background-color: #041e42;
 }
-#newsletters h4{
+
+#newsletters h4 {
     color: #fff;
     font-size: 22px;
     font-weight: 700;
 }
-#newsletters p{
+
+#newsletters p {
     color: #fff;
     font-size: 14px;
     font-weight: 600;
 }
-#newsletters span{
+
+#newsletters span {
     color: #ffbd27;
 }
-#newsletters .form{
+
+#newsletters .form {
     display: flex;
     width: 40%;
 }
 
-#newsletters input{
+#newsletters input {
     height: 3.125rem;
     padding: 0 1.25rem;
     font-size: 14px;
@@ -471,62 +485,74 @@ body {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0rem;
 }
-#newsletters button{
+
+#newsletters button {
     background-color: #088178;
     color: #fff;
     white-space: nowrap;
     border-top-left-radius: 0;
-    border-bottom-left-radius: 0rem; 
+    border-bottom-left-radius: 0rem;
 }
-footer{
+
+footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-footer .col{
+
+footer .col {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 20px;
 }
-footer .logo{
+
+footer .logo {
     margin-bottom: 30px;
 }
-footer h4{
+
+footer h4 {
     font-size: 14px;
-    padding-bottom:20px; 
+    padding-bottom: 20px;
 }
-footer p{
+
+footer p {
     font-size: 13px;
     margin: 0 0 8px 0;
 }
-footer a{
+
+footer a {
     font-size: 13px;
     text-decoration: none;
     color: #222;
     margin: 0 0 10px 0;
 }
-footer .follow{
+
+footer .follow {
     margin-top: 20px;
 }
-footer .follow i{
+
+footer .follow i {
     color: #465b52;
     padding-right: 4px;
     cursor: pointer;
 }
-footer .install .row img{
+
+footer .install .row img {
     border: 1px solid #088178;
     border-radius: 4px;
 }
-footer .install img{
+
+footer .install img {
     margin: 10px 0 15px 0;
 }
+
 footer .follow i:hover,
-footer a:hover{
+footer a:hover {
     color: #088178;
 }
 
-footer .copyright{
+footer .copyright {
     text-align: center;
     width: 100%;
 }
@@ -559,3 +585,159 @@ footer .copyright{
 
 
 /* media queries */
+@media (max-width:799px) {
+    .section-p1 {
+        padding: 40px;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #e3e6f3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 00.3s ease;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 15px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    #lg-bag {
+        display: none;
+    }
+
+    #hero {
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+
+    #feature {
+
+        justify-content: center;
+    }
+
+    #feature .fe-box {
+        margin: 25px 15px;
+    }
+
+    #product-1 .pro-container {
+        justify-content: center;
+    }
+
+    #product-1 .pro {
+
+        margin: 15px;
+    }
+
+    #banner {
+        height: 20vh;
+    }
+
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 30vh;
+    }
+
+    #banner-3 {
+
+        display: block;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 0 40px;
+        margin: 0;
+    }
+
+    #banner-3 .banner-box {
+        margin: 0;
+    }
+
+    #newsletters .form {
+        width: 100%;
+    }
+}
+
+
+/* for mobile */
+@media (max-width: 477px) {
+    #header {
+        padding: 10px 30px;
+    }
+    .section-p1{
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    #hero {
+        padding: 0 20px;
+        background-position: 55%;
+    }
+    #feature .fe-box{
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+    #feature {
+        justify-content: space-between;
+    }
+
+    #product-1 .pro{
+        width: 100%;
+    }
+    #banner{
+        height: 40vh;
+    }
+
+    #sm-banner .banner-box{
+        height: 40vh;
+    }
+    #sm-banner .banner-box-2{
+        margin-top: 20px;
+    }
+     #banner-3{
+         padding: 0 20px;
+     }
+     #banner-3 .banner-box{
+         width: 100%;
+         margin: 10px 0 20px 0;
+     }
+
+}
