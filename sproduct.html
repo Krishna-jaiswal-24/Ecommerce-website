@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/a20b2e996b.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a20b2e996b.js" crossorigin="anonymous"></script>
-    
+
 </head>
 
 <body>
@@ -36,13 +36,121 @@
         </div>
     </section>
 
-<section id="pro-details" class="section-p1">
-    <div class="single-pro-image" >
-        <img src="img/products/f1.jpg"  width="100%" id="MainImg" alt="">
+    <section id="pro-details" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/products/f1.jpg" width="100%" id="MainImg" alt="">
 
-    </div>
-    <div class="small-img-group"></div>
-</section>
+
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/products/f1.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f3.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f4.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f5.jpg" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <h6>Home / T-Shirt</h6>
+            <h4>Men's Fashion T-shirt</h4>
+            <h2>$139</h2>
+            <select>
+                <option>XL</option>
+                <option>XXL</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+            </select>
+            <input type="number" value="1">
+            <button class="normal">Add To Cart</button>
+            <h4>Product Details</h4>
+            <span>Red and black checked casual shirt, has a spread collar, button placket, 1 pocket, long sleeves,
+                curved hem.
+                Enhance your shirt collections with these classy and stylish shirts from U.S Polo Assn.. Dotting down
+                the details, it's framed with a button-down collar, chest patch pocket and long sleeves. Wear yours with
+                sleek trousers and brogues.
+                Manufacturer Info: Sixth Sense
+                Country of Origin: India</span>
+        </div>
+    </section>
+    <section id="product-1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Summer Collection New Modern Design</p>
+
+        <div class="pro-container">
+            <div class="pro">
+                <img src="img/products/n1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i>⭐</i>
+                        <i>⭐</i>
+                        <i>⭐</i>
+                        <i>⭐</i>
+                        <i>⭐</i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#" class="cart">🛒</a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n2.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i>⭐</i>
+                        <i>⭐</i>
+                        <i>⭐</i>
+                        <i>⭐</i>
+                        <i>⭐</i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#" class="cart">🛒</a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n3.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i>⭐</i>
+                        <i>⭐</i>
+                        <i>⭐</i>
+                        <i>⭐</i>
+                        <i>⭐</i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#" class="cart">🛒</a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n5.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i>⭐</i>
+                        <i>⭐</i>
+                        <i>⭐</i>
+                        <i>⭐</i>
+                        <i>⭐</i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#" class="cart">🛒</a>
+            </div>
+
+        </div>
+    </section>
 
     <section id="newsletters" class="section-p1 section-m1">
         <div class="newstext">
@@ -55,6 +163,8 @@
             <button class="normal">Sign Up</button>
         </div>
     </section>
+
+    
 
     <footer class="section-p1">
         <div class="col">
@@ -108,6 +218,23 @@
         </div>
 
     </footer>
+
+<script >
+    var MainImg = document.getElementById("MainImg");
+    var smallimg= document.getElementsByClassName("small-img");
+    smallimg[0].onclick = function(){
+        MainImg.src=smallimg[0].src;
+    }
+    smallimg[1].onclick = function(){
+        MainImg.src=smallimg[1].src;
+    }
+    smallimg[2].onclick = function(){
+        MainImg.src=smallimg[2].src;
+    }
+    smallimg[3].onclick = function(){
+        MainImg.src=smallimg[3].src;
+    }
+</script>
 
     <script src="index.js"></script>
 </body>
