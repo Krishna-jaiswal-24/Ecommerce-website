@@ -718,7 +718,32 @@ footer .copyright {
 }
 
 
+/* about page */
+#page-header.about-header{
+    background-image: url("img/about/banner.png") ;
+}
+#about-head{
+    display: flex;
+    align-items: center;
+}
 
+#about-head img{
+    width: 50%;
+    height: auto;
+}
+#about-head div{
+    padding-left:40px;
+}
+#about-app {
+    text-align: center;
+}
+
+#about-app .video video{
+    width: 70%;
+    height: auto;
+    border-radius: 20px;
+
+}
 
 
 
@@ -914,4 +939,36 @@ footer .copyright {
     #blog .blog-details{
         width: 100%;
     }
+
+
+/* about page */
+#about-head{
+    
+    flex-direction: column;
+
+}
+#about-head img{
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+}
+#about-head div{
+    padding-left: 0;
+}
+#about-app .video video{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
