@@ -634,59 +634,69 @@ footer .copyright {
     margin-bottom: 10px;
 
 }
-#pro-details .single-pro-details input{
+
+#pro-details .single-pro-details input {
     width: 50px;
     height: 47px;
     padding-left: 10px;
     font-size: 16px;
     margin-right: 10px;
 }
-#pro-details .single-pro-details button{
+
+#pro-details .single-pro-details button {
     background-color: #088178;
     color: #fff;
 }
 
-#pro-details .single-pro-details input:focus{
+#pro-details .single-pro-details input:focus {
     outline: none;
 }
-#pro-details .single-pro-details span{
+
+#pro-details .single-pro-details span {
     line-height: 25px;
 }
 
 /* blog page */
-#page-header.blog-header{
+#page-header.blog-header {
     background-image: url("img/banner/b19.jpg");
 }
-#blog{
+
+#blog {
     padding: 150px 150px 0 150px;
 }
-#blog .blog-box{
+
+#blog .blog-box {
     display: flex;
     align-items: center;
     width: 100%;
     position: relative;
     padding-bottom: 100px;
-    
+
 }
-#blog .blog-img{
+
+#blog .blog-img {
     width: 50%;
     margin-right: 40px;
 }
-#blog img{
+
+#blog img {
     width: 100%;
     height: 300px;
     object-fit: cover;
 }
-#blog .blog-details{
+
+#blog .blog-details {
     width: 50%;
 }
-#blog .blog-details a{
+
+#blog .blog-details a {
     text-decoration: none;
     font-size: 12px;
     color: #000;
     font-weight: 700;
     position: relative;
 }
+
 #blog .blog-details a::after {
     content: "";
     width: 50px;
@@ -696,22 +706,22 @@ footer .copyright {
     top: 4px;
     right: -60px;
 }
-#blog .blog-details a:hover{
+
+#blog .blog-details a:hover {
     color: #088178;
     transition: 0.3s;
 }
 
-#blog .blog-details a:hover::after
-{
+#blog .blog-details a:hover::after {
     background-color: #088178;
 }
 
-#blog .blog-box h1{
+#blog .blog-box h1 {
     position: absolute;
     top: -40px;
     left: 0;
     font-size: 70px;
-    font-weight:700 ;
+    font-weight: 700;
     color: #c9cbce;
     z-index: -9;
 
@@ -719,26 +729,29 @@ footer .copyright {
 
 
 /* about page */
-#page-header.about-header{
-    background-image: url("img/about/banner.png") ;
+#page-header.about-header {
+    background-image: url("img/about/banner.png");
 }
-#about-head{
+
+#about-head {
     display: flex;
     align-items: center;
 }
 
-#about-head img{
+#about-head img {
     width: 50%;
     height: auto;
 }
-#about-head div{
-    padding-left:40px;
+
+#about-head div {
+    padding-left: 40px;
 }
+
 #about-app {
     text-align: center;
 }
 
-#about-app .video video{
+#about-app .video video {
     width: 70%;
     height: auto;
     border-radius: 20px;
@@ -746,67 +759,119 @@ footer .copyright {
 }
 
 /* contact page */
-#contact-details{
+#contact-details {
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 25px;
 
 }
-#contact-details .details{
+
+#contact-details .details {
     width: 40%;
     padding: 25px;
 }
+
 #contact-details .details span,
-#form-details form span{
+#form-details form span {
     font-size: 12px;
+    padding: 20px;
 
 }
+
 #contact-details .details h2,
-#form-{
+#form- {
     font-size: 26px;
     line-height: 35px;
     padding: 20px 0;
 }
-#contact-details .details h3{
+
+#contact-details .details h3 {
     font-size: 16px;
     padding-bottom: 20px;
 }
-#contact-details .details li{
-   list-style: none;
-   display: flex;
-   padding: 10px 0;
+
+#contact-details .details li {
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
 }
-#contact-details .details li i{
+
+#contact-details .details li i {
     font-size: 14px;
     padding-right: 22px;
 }
-#contact-details .details li p{
+
+#contact-details .details li p {
     margin: 0;
     font-size: 14px;
 }
-#contact-details .map{
+
+#contact-details .map {
     width: 55%;
     height: 400px;
 }
-#contact-details iframe{
+
+#contact-details iframe {
     width: 100%;
     height: 100%;
 }
 
+#form-details{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid #e1e1e1;
+}
 
-#form-details form{
+#form-details form {
     width: 65%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding: 10px;
 }
 
+#form-details form input,
+#form-details form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+}
 
+#form-details button {
+    color: #fff;
+    background-color: #088178;
 
+}
 
+#form-details .people div {
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+}
 
+#form-details .people div img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 15px;
+}
 
+#form-details .people div p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 25px;
+}
+#form-details .people div span{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
 
 
 
@@ -989,58 +1054,85 @@ footer .copyright {
         width: 100%;
         margin: 10px 0 20px 0;
     }
+
     /* single product */
-     #pro-details{
-         display: flex;
-         flex-direction: column;
-     }
-     #pro-details .single-pro-image{
+    #pro-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #pro-details .single-pro-image {
         width: 100%;
-         margin-right: 0;
+        margin-right: 0;
     }
-    #pro-details .single-pro-details{
-        width: 100%  ;
+
+    #pro-details .single-pro-details {
+        width: 100%;
     }
+
     /* blog page */
-    #blog{
+    #blog {
         padding: 100px 20px 0 20px;
     }
 
-    #blog .blog-box{
+    #blog .blog-box {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
-    #blog .blog-img{
+
+    #blog .blog-img {
         width: 100%;
         margin-right: 0;
     }
-    #blog .blog-details{
+
+    #blog .blog-details {
         width: 100%;
     }
 
 
-/* about page */
-#about-head{
-    
+    /* about page */
+    #about-head {
+
+        flex-direction: column;
+
+    }
+
+    #about-head img {
+        margin-bottom: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    #about-head div {
+        padding-left: 0;
+    }
+
+    #about-app .video video {
+        width: 100%;
+    }
+
+#contact-details {
+    display: flex;
     flex-direction: column;
-
 }
-#about-head img{
-    margin-bottom: 20px;
-    width: 100%;
-    height: auto;
+#contact-details .details{
+ width: 100%;
+ margin-bottom: 30px;
 }
-#about-head div{
-    padding-left: 0;
-}
-#about-app .video video{
+#contact-details .map{
     width: 100%;
 }
 
-
-
-
+#form-details{
+margin: 10px;
+padding: 30px 10px;
+flex-wrap: wrap;
+}
+#form-details .form{
+    width: 100%;
+    margin-bottom: 30px;
+}
 
 
 
